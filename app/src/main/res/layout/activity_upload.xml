@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_book">
+
+    <include
+        android:id="@+id/tb_upload_activity"
+        layout="@layout/layout_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tb_upload_activity"
+        android:layout_margin="30dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.45"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.86"
+                android:src="@drawable/icon_book_title"/>
+
+            <EditText
+                android:id="@+id/et_file_name_upload_activity"
+                android:layout_weight="0.14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="标题自定义(少于15字)"
+                android:textSize="24sp"
+                android:background="@null"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.87"
+                android:src="@drawable/icon_note"/>
+
+            <EditText
+                android:id="@+id/et_note_upload_activity"
+                android:layout_weight="0.13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="备注(少于40字)"
+                android:textSize="24sp"
+                android:background="@null"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_upload_confirm_upload_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.55"
+            android:background="@android:color/holo_blue_dark">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="30sp"
+                android:text="@string/tv_upload_book_reading"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

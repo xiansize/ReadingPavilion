@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_book">
+
+    <include layout="@layout/layout_title_bar"/>
+
+    <ImageView
+        android:id="@+id/iv_microphone_voice_search_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/microphone_have_bg"
+        android:layout_centerInParent="true"/>
+
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/iv_tips_voice_search_activity"
+        android:src="@drawable/tips_voice_search"/>
+
+    <LinearLayout
+        android:id="@+id/ll_jump_to_write_voice_search_activity"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_code_login_button">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_write"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.6"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="手写"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:textSize="66sp"
+            android:layout_centerInParent="true"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

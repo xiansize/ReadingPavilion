@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_login_img_background"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/background">
+
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_name_english_login_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/text_view_login_english_activity"
+                android:textColor="@android:color/white"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="@string/text_view_login_title_activity"
+                android:textColor="@android:color/white"
+                android:textSize="56sp" />
+
+
+            <View
+                android:layout_width="190dp"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/white" />
+
+
+            <TextView
+                android:id="@+id/tv_show_time_login_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="22dp"
+                android:text="2012/12/12  12:12"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+
+            <View
+                android:layout_width="190dp"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="22dp"
+                android:background="@android:color/white" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_login_img_background"
+        android:layout_margin="40dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_input_code_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/shape_code_login_button">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/icon_input_code" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="0.6"
+                    android:text="@string/text_view_login_book_activity"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_scan_code_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="130dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/shape_qr_code_login_button">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/icon_qr_code" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="0.6"
+                    android:text="@string/text_view_login_qrcode_activity"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

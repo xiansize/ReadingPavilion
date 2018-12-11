@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_book">
+
+    <include android:id="@+id/tb_function_activity" layout="@layout/layout_title_bar"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tb_function_activity"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_book_reading_function_reading"
+                android:layout_width="320dp"
+                android:layout_height="360dp"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@drawable/shape_code_login_button">
+
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:src="@drawable/icon_book_reading"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_view_book_function_activity"
+                    android:textColor="@android:color/white"
+                    android:textSize="46sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_scenario_reading_function_activity"
+                android:layout_width="320dp"
+                android:layout_height="360dp"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@drawable/shape_qr_code_login_button">
+
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/icon_scenario_reading"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_view_scenario_function_activity"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="22dp"
+                    android:textSize="46sp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+

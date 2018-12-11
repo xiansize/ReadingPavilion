@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_book">
+
+    <include
+        android:id="@+id/tb_scenario_show_activity"
+        layout="@layout/layout_title_bar_show"/>
+
+
+
+
+    <ScrollView
+        android:layout_width="900dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tb_scenario_show_activity"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:background="@color/colorWhite1"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_backround_select_scenario_show_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/shape_code_login_button">
+
+                    <TextView
+                        android:id="@+id/tv_background_scenario_show_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_background_music_name"
+                        android:textSize="26sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginRight="10dp"/>
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_tips_count_time_scenario_show_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_tips_count_time_read_book_activity"
+                    android:textSize="26sp"
+                    android:textColor="@android:color/holo_red_dark"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_content_show_show_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="2sp"
+                android:layout_centerHorizontal="true"
+                android:textSize="34sp"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tb_scenario_show_activity"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:id="@+id/ll_prelisten_scenario_reading_activity"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.3"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_code_grey">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/icon_prelisten"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_prelisten_book_reading"
+                android:layout_weight="0.5"
+                android:textSize="26sp"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_pause_scenario_reading_activity"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.3"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_code_login_button">
+
+            <ImageView
+                android:id="@+id/iv_start_record_scenario_reading_activity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/icon_start_reading"/>
+
+
+            <TextView
+                android:id="@+id/tv_start_record_scenario_reading_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_start_reading"
+                android:layout_weight="0.6"
+                android:textSize="26sp"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_upload_scenario_reading_activity"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.3"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_code_grey">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.4"
+                android:src="@drawable/icon_upload"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_upload_book_reading"
+                android:layout_weight="0.6"
+                android:textSize="26sp"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="#33CCCCCC">
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/iv_microphone_book_reading"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_prelisten_scenario_reading_activity"-->
+                <!--android:layout_width="160dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:layout_margin="20dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:background="@drawable/shape_code_grey">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:src="@drawable/icon_prelisten"/>-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/tv_prelisten_book_reading"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:textSize="26sp"-->
+                    <!--android:textColor="@android:color/white"/>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_pause_scenario_reading_activity"-->
+                <!--android:layout_width="160dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:layout_margin="20dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:background="@drawable/shape_code_login_button">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_start_record_scenario_reading_activity"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:src="@drawable/icon_start_reading"/>-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_start_record_scenario_reading_activity"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/button_start_reading"-->
+                    <!--android:layout_weight="0.6"-->
+                    <!--android:textSize="26sp"-->
+                    <!--android:textColor="@android:color/white"/>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_upload_scenario_reading_activity"-->
+                <!--android:layout_width="160dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:layout_margin="20dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:background="@drawable/shape_code_grey">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_weight="0.4"-->
+                    <!--android:src="@drawable/icon_upload"/>-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/tv_upload_book_reading"-->
+                    <!--android:layout_weight="0.6"-->
+                    <!--android:textSize="26sp"-->
+                    <!--android:textColor="@android:color/white"/>-->
+
+
+            <!--</LinearLayout>-->
+
+
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_turn_left_scenario_show_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/icon_turn_left"/>
+
+                <RelativeLayout
+                    android:layout_weight="0.4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_middle"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_show_speed_scenario_show_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textSize="34sp"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:text="1"/>
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_turn_right_scenario_show_activty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/icon_turn_right"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_total_page_number_scenario_show_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="32sp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="共 [ 1 ] 页"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_count_time_scenario_show_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="46dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginRight="42dp"/>
+
+</RelativeLayout>

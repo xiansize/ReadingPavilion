@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_book">
+
+
+    <include
+        android:id="@+id/tb_scenaio_reading_activity"
+        layout="@layout/layout_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tb_scenaio_reading_activity"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_title_search_scenario_activity"
+            android:layout_margin="30dp"
+            android:layout_width="320dp"
+            android:layout_height="370dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:background="@drawable/shape_code_purple">
+
+            <ImageView
+               android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_title_search"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/tv_title_search"
+                android:layout_marginTop="20dp"
+                android:textSize="34sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_voice_search_scenario_activity"
+            android:layout_margin="30dp"
+            android:layout_width="320dp"
+            android:layout_height="370dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:background="@drawable/shape_code_login_button">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_voice_search"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/tv_voice_search"
+                android:layout_marginTop="20dp"
+                android:textSize="34sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_category_search_scenario_activity"
+            android:layout_margin="30dp"
+            android:layout_width="320dp"
+            android:layout_height="370dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:background="@drawable/shape_qr_code_login_button">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_category_search"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/tv_catgory_search"
+                android:layout_marginTop="30dp"
+                android:textSize="34sp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

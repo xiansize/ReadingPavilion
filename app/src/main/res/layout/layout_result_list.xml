@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_search_result"
+    android:orientation="vertical"
+    android:layout_width="426dp"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/shape_code_white">
+
+    <ImageView
+        android:id="@+id/iv_icon_disk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_disk"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/iv_icon_disk"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title_item_search_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:text="背影"/>
+
+        <TextView
+            android:id="@+id/tv_author_item_search_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:text="作 者: 朱自清"/>
+
+        <TextView
+            android:id="@+id/tv_type_item_search_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:visibility="gone"
+            android:text="类 型: 散文"/>
+
+        <TextView
+            android:id="@+id/tv_total_time_item_search_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="时 长: 2分30秒"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

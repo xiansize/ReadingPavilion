@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_book">
+
+    <include android:id="@+id/tb_book_read_activity"
+        layout="@layout/layout_title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_background_music_book_read_activity"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_background_book_read_selected"
+        android:layout_below="@id/tb_book_read_activity"
+        android:layout_marginTop="26dp">
+
+        <TextView
+            android:id="@+id/tv_background_book_read_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/text_background_music_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_microphone_book_reading"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/microphone00"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_tips_time"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_microphone_book_reading"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_count_time_book_read_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+    </LinearLayout>
+
+
+
+    
+    <LinearLayout
+        android:id="@+id/ll_operation_book_read_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_tips_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_prelisten_book_reading_activity"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.3"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_code_purple">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:src="@drawable/icon_prelisten"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_prelisten_book_reading"
+                android:layout_weight="0.6"
+                android:textSize="60sp"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_pause_book_reading_activity"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.3"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_code_login_button">
+
+            <ImageView
+                android:id="@+id/iv_start_record_book_reading_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:src="@drawable/icon_start_reading"/>
+
+
+            <TextView
+                android:id="@+id/tv_start_record_book_reading_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_start_reading"
+                android:layout_weight="0.6"
+                android:textSize="60sp"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_upload_book_reading_activity"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.3"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_qr_code_login_button">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:src="@drawable/icon_upload"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_upload_book_reading"
+                android:layout_weight="0.6"
+                android:textSize="60sp"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_tips_count_time_book_read_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_tips_count_time_read_book_activity"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@id/ll_operation_book_read_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

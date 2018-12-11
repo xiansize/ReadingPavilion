@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="500dp"
+    android:background="@drawable/shape_scan_qr_code"
+    >
+    <!--android:background="#dddddd"-->
+
+    <TextView
+        android:id="@+id/tv_login_input_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view_login_input_code_activity"
+        android:textColor="@android:color/background_dark"
+        android:textSize="32sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/iv_exit_input_code_dialog"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="34dp"
+        android:src="@drawable/icon_exit"/>
+
+    <View
+        android:layout_width="160dp"
+        android:layout_height="4dp"
+        android:layout_below="@id/tv_login_input_code"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login_input_code"
+        android:text="@string/text_view_tips_login_input_code_activity"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite1"
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tv_login_input_code"
+        >
+
+        <TextView
+            android:id="@+id/tv_input_code_code_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:maxLines="1"
+            android:text=""/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_input_code_key_board"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/colorWhite2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <RelativeLayout android:id="@+id/rl_number_1_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="1"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_number_2_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="2"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_number_3_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="3"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_number_4_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="4"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_number_5_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="5"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_number_6_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="6"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_number_7_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="7"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_number_8_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="8"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_number_9_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="9"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_number_reset_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="回退"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_number_0_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_number_input">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:text="0"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_number_comfirm_input_code_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/shape_number_input_comfirm">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:text="确定"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

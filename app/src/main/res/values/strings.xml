@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">朗读舱</string>
+    <string name="text_view_login_english_activity">READING LIBRARY</string>
+    <string name="text_view_login_title_activity">朗读舱</string>
+    <string name="text_view_login_book_activity">预约码</string>
+    <string name="text_view_login_qrcode_activity">二维码</string>
+    <string name="text_view_login_scan_qrcode_activity">二维码登陆</string>
+    <string name="text_view_tips_login_scan_qrcode_activity">请打开“图创软件”公众号进行扫码</string>
+    <string name="text_view_login_input_code_activity">预约码登陆</string>
+    <string name="text_view_tips_login_input_code_activity">请输入您的预约码进行登陆</string>
+
+
+    <string name="text_view_scenario_function_activity">场景朗读</string>
+    <string name="text_view_book_function_activity">带书朗读</string>
+
+    <string name="tv_prelisten_book_reading">预听</string>
+    <string name="tv_start_book_reading">暂停</string>
+    <string name="tv_upload_book_reading">上传</string>
+
+    <string name="tv_search">搜索</string>
+    <string name="tv_title_search">题名搜索</string>
+    <string name="tv_voice_search">语音搜索</string>
+    <string name="tv_catgory_search">分类搜索</string>
+
+    <string name="tv_search_result">搜索结果</string>
+
+    <string name="tv_background">选择背景音乐</string>
+
+    <string name="button_start_reading">开始</string>
+    <string name="button_finish_reading">完成</string>
+    <string name="button_pause_reading">暂停</string>
+
+    <string name="text_succeed_activity_time_count">倒计时：</string>
+    <string name="text_succeed_activity_time">60 S</string>
+    <string name="text_succeed_activity_share">微信扫码分享</string>
+    <string name="text_succeed_activity_share_succeed">上传成功！！！</string>
+
+    <string name="text_tips_count_time_read_book_activity">*录制请不要超过5分钟*</string>
+
+    <string name="text_background_music_name">背景音乐:\t无</string>
+
+
+    <string name="text_loading">请稍后..</string>
+
+</resources>

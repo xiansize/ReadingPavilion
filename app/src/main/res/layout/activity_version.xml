@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcsoft.read.activity.VersionActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_finish_version_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <TextView
+            android:id="@+id/tv_time_version_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="2018-01-01"
+            android:textColor="@android:color/background_dark"
+            />
+
+        <TextView
+            android:id="@+id/tv_version_version_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="版本：1.1.1"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_dark"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
